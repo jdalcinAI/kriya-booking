@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Kriya — Book your ritual</title>
+  <meta name="description" content="Book massages, facials, thermal rituals and more in under a minute. Earn rewards, grab last-minute openings, and make wellness a ritual." />
+  <meta name="theme-color" content="#F6F1EA" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#121814" media="(prefers-color-scheme: dark)" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Kriya" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#view">Skip to content</a>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#/" aria-label="Kriya home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <ellipse cx="16" cy="13" rx="5.5" ry="10" fill="currentColor" opacity=".9"/>
+        <ellipse cx="16" cy="13" rx="5.5" ry="10" fill="currentColor" opacity=".45" transform="rotate(-48 16 22)"/>
+        <ellipse cx="16" cy="13" rx="5.5" ry="10" fill="currentColor" opacity=".45" transform="rotate(48 16 22)"/>
+      </svg>
+      <span class="brand-word">kriya</span>
+    </a>
+    <nav class="topnav" aria-label="Primary">
+      <a href="#/" data-nav="home">Discover</a>
+      <a href="#/explore" data-nav="explore">Treatments</a>
+      <a href="#/rewards" data-nav="rewards">Rewards</a>
+      <a href="#/gift" data-nav="gift">Gift cards</a>
+      <a href="#/me" data-nav="me">My rituals</a>
+    </nav>
+    <div class="topbar-actions">
+      <a class="points-pill" href="#/rewards" id="pointsPill" aria-label="Reward points"></a>
+      <a class="btn btn-primary btn-sm" href="#/book">Book a ritual</a>
+    </div>
+  </header>
+
+  <main id="view" class="view" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Primary">
+    <a href="#/" data-nav="home"><span data-icon="home"></span><span>Home</span></a>
+    <a href="#/explore" data-nav="explore"><span data-icon="compass"></span><span>Explore</span></a>
+    <a href="#/book" data-nav="book" class="tab-book" aria-label="Book a ritual"><span data-icon="plus"></span></a>
+    <a href="#/rewards" data-nav="rewards"><span data-icon="award"></span><span>Rewards</span></a>
+    <a href="#/me" data-nav="me"><span data-icon="user"></span><span>Me</span></a>
+  </nav>
+
+  <div class="toast-wrap" id="toasts" role="status" aria-live="polite"></div>
+  <div class="sheet-root" id="sheet" hidden></div>
+
+  <noscript><p class="noscript">Kriya needs JavaScript to book appointments.</p></noscript>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

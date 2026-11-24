@@ -1,0 +1,20 @@
+{
+  "name": "Kriya — Wellness Spa",
+  "short_name": "Kriya",
+  "description": "Book massages, facials and thermal rituals in under a minute.",
+  "start_url": "./#/",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F6F1EA",
+  "theme_color": "#2F4A3A",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Book a ritual", "url": "./#/book" },
+    { "name": "Last-minute openings", "url": "./#/?openings=1" },
+    { "name": "My rituals", "url": "./#/me" }
+  ]
+}
